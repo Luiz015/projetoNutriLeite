@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#logotipo {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #0099FF; 
+    position: relative;
+    margin-left: 80px;
+    transition: margin-left 0.2s;
+}
+
+.menu.expansao ~ #logotipo {
+    margin-left: 300px;
+}
+
+#logotipo img {
+    max-width: 130px;
+    height: fit-content;
+}
+
+body{
+    height: 100vh;
+}
+
+
+nav.menu{
+    width: 80px;
+    height: 100%;
+    background-color: #0099FF;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 darkblue;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu.expansao{
+    width: 300px;
+}
+
+.expansao{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.conteudo {
+    margin-left: 80px; 
+    transition: margin-left 0.2s ease;
+    padding: 20px;
+}
+
+.menu.expansao ~ .conteudo {
+    margin-left: 300px;
+}
+
+.expansao >i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-do-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+     background-color: darkblue;
+}
+ul li.item-do-menu:hover{
+    background: darkblue;
+}
+
+
+ul li.item-do-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+
+}
+
+ul li.item-do-menu a .txt-link{
+    margin-left: 40px;
+
+}
+
+ul li.item-do-menu a .icon >i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+

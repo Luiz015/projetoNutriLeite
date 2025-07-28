@@ -1,0 +1,28 @@
+.conteudo {
+    margin-left: 80px; 
+    transition: margin-left 0.2s ease;
+    padding: 20px;
+    
+}
+.conteudo h1{
+    background-color: #0099FF;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.conteudo p{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.menu.expansao ~ .conteudo {
+    margin-left: 300px;
+}

@@ -1,0 +1,10 @@
+.conteudo {
+    margin-left: 80px; 
+    transition: margin-left 0.2s ease;
+    padding: 20px;
+    
+}
+
+.menu.expansao ~ .conteudo {
+    margin-left: 300px;
+}

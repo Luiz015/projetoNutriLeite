@@ -1,0 +1,48 @@
+
+#produtos {
+  background-color: #0099FF;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+
+#produtosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+
+.produto {
+  width: 200px;
+  text-align: center;
+}
+
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+
+.produto img:hover {
+  transform: scale(1.05);
+}
+
+
+.produto p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
